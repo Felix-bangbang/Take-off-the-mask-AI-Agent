@@ -10,6 +10,22 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+LOGO_URL = "https://github.com/Felix-bangbang/Take-off-the-mask-AI-Agent/blob/main/logo.png"
+
+st.markdown(
+    f"""
+    <style>
+    </style>
+    <link rel="apple-touch-icon" href="{LOGO_URL}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{LOGO_URL}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{LOGO_URL}">
+    <link rel="apple-touch-icon" sizes="167x167" href="{LOGO_URL}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{LOGO_URL}">
+    <link rel="icon" type="image/png" sizes="512x512"  href="{LOGO_URL}">
+    """,
+    unsafe_allow_html=True
+)
+
 # --- 2. 样式优化 (隐藏无关菜单，让它更像App) ---
 hide_streamlit_style = """
             <style>
