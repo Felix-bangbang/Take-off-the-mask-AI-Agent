@@ -4,7 +4,7 @@ from PIL import Image
 
 # --- 1. 页面配置 (关键：设置手机图标) ---
 st.set_page_config(
-    page_title="AI 毒舌/洞悉诊断室",
+    page_title="AI 锐评/洞悉诊断室",
     page_icon="logo.png",  # 确保目录下有这张图
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -103,7 +103,7 @@ col1, col2 = st.columns([1, 5])
 with col1:
     st.image("logo.png", width=50)
 with col2:
-    st.title("见心AI")
+    st.title("透视")
 
 st.caption("上传朋友圈/小红书/抖音截图，AI 帮你一眼看穿本质。")
 
