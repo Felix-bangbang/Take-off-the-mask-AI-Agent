@@ -30,7 +30,7 @@ try:
     # 优先从 Streamlit 云端读取 Secrets
     api_key = st.secrets["GOOGLE_API_KEY"]
 except:
-    # 本地调试（切记：上传 GitHub 前请删除或注释掉这一行！）
+    # 本地调试（切记：上传 GitHub 前删除）
     # api_key = "粘贴你的_API_KEY_在这里" 
     st.error("请配置 API Key")
 
@@ -71,8 +71,8 @@ def get_gemini_response(image, mode):
     > [根据模式，生成一句犀利吐槽 或 一句深情冷读]
 
     **3. 深度解码**
-    * 🖼️ **画面潜台词**：...
-    * 📝 **文案潜台词**：...
+    * 🖼️ **画面潜台词**：... [三句话]
+    * 📝 **文案潜台词**：... [三句话]
 
     **4. 最终处方**
     * ...
