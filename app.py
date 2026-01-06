@@ -78,8 +78,8 @@ def get_gemini_response(image, mode):
     * ...
     """
     
-    # 使用性价比之王 Flash 模型
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    # 使用 Flash 模型
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content([system_prompt, user_instruction, image])
     return response.text
 
@@ -89,14 +89,14 @@ col1, col2 = st.columns([1, 5])
 with col1:
     st.image("logo.png", width=50)
 with col2:
-    st.title("网红照妖镜")
+    st.title("见心AI")
 
 st.caption("上传朋友圈/小红书/抖音截图，AI 帮你一眼看穿本质。")
 
 # 模式选择
 mode = st.radio(
     "请选择观测人格：",
-    ("🌶️ 锐评 (毒舌吐槽)", "🔮 洞悉 (深情解读)"),
+    ("🌶️ 锐评", "🔮 洞悉"),
     horizontal=True
 )
 
